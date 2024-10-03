@@ -2,6 +2,12 @@ To build this repository, you need to get this package:
 
     t38modem_2.0.0-4build3
 
+And the filename should be:
+
+    t38modem_2.0.0-4build3_amd64.deb
+        or
+    t38modem_2.0.0-4build3_arm64.deb
+
 You can get the package from here:
 
     https://launchpad.net/ubuntu/+source/t38modem

@@ -5,7 +5,6 @@ services:
     privileged: true
     volumes:
       - ./config:/etc/hylafax
-      - ./untitled.tiff:/untitled.tiff:ro
     environment:
       - SIPADDR=example.com
       - SIPUSER=username
