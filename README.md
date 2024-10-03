@@ -21,6 +21,6 @@ How to build (Using docker-compose)
 
 How to use
 1. Deploy the container with sip settings to environment and run it
-2. Go to shell of the container using ```docker exec -it hylafax```
+2. Go to shell of the container using ```docker exec -it hylafax bash```
 3. Run ```faxsetup```
 4. Re-run the container
