@@ -6,7 +6,7 @@ How to build (Using docker build)
 3. Build using ```docker build -t hylafax .```
 4. Now run using this command:
 ```
-docker run -d hylafax\
+docker run -d hylafax \
     --name hylafax --privileged \
     -v /path-of-config:/etc/hylafax \
     -e SIPADDR=example.com \
