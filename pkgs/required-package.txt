@@ -1,0 +1,7 @@
+To build this repository, you need to get this package:
+
+    t38modem_2.0.0-4build3
+
+You can get the package from here:
+
+    https://launchpad.net/ubuntu/+source/t38modem
