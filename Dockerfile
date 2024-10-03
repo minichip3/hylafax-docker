@@ -25,7 +25,6 @@ RUN if [ "$(uname -m)" = "x86_64" ]; then \
 # Supervisor 설정 복사
 COPY ./supervisord.conf /etc/supervisor/supervisord.conf
 COPY ./init-hylafax.sh /usr/sbin/hylafax-init.sh
-RUN chmod a+x /usr/sbin/hylafax-init.sh
 
 ENV SIPADDR=sip.example.com
 ENV SIPUSER=user
