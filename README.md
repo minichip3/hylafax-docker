@@ -10,7 +10,8 @@ docker run -d --name hylafax \
     -v /path-of-config:/etc/hylafax \
     -e SIPADDR=example.com \
     -e SIPUSER=username \
-    -e SIPPASS=password
+    -e SIPPASS=password \
+    --privileged
 ```
 
 How to build (Using docker-compose)
