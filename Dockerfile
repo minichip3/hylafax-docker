@@ -30,5 +30,11 @@ ENV SIPADDR=sip.example.com
 ENV SIPUSER=user
 ENV SIPPASS=password
 
+# 팩스 자동전송 스크립트 설정
+COPY ./faxsend.sh /usr/bin/faxsend.sh
+COPY ./faxsend.cron /usr/bin/cron-faxsend.sh
+RUN chmod a+x /usr/bin/faxsend.sh && chmod a+x /usr/bin/cron-faxsend.sh
+RUN touch /var/log/faxsend.log
+
 # Supervisor 실행 설정
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]

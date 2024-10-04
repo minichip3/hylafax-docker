@@ -2,4 +2,5 @@
 !/pkgs/required-package.txt
 /config
 /inbox
+/send
 .DS_Store

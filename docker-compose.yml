@@ -5,6 +5,8 @@ services:
     privileged: true
     volumes:
       - ./config:/etc/hylafax
+      - ./inbox:/var/spool/hylafax/recvq
+      - ./send:/tmp/faxsend
     environment:
       - SIPADDR=example.com
       - SIPUSER=username

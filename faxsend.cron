@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while true; do
+    /usr/bin/faxsend.sh
+    sleep 300  # 300초(5분) 동안 대기
+done
