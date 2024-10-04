@@ -9,6 +9,8 @@ How to build (Using docker build)
 docker run -d \
     --name hylafax --privileged \
     -v /path-of-config:/etc/hylafax \
+    -v /path-of-inbox:/var/spool/hylafax/recvq \
+    -v /path-of-send:/tmp/faxsend \
     -e SIPADDR=example.com \
     -e SIPUSER=username \
     -e SIPPASS=password hylafax
